@@ -1,6 +1,110 @@
 @import 'null.scss';
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Phudu&display=swap');
 
 body {
     font-family: 'Manrope', sans-serif;
+}
+
+a {
+    color: #555555;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.inside {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffffbc;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #bebebe;
+    color: #555555;
+
+    &_body {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 0;
+
+        .logo {
+            display: flex;
+            transition-duration: 0.1s;
+
+            .logo_part {
+                padding: 0 8px;
+                font-family: 'Phudu', cursive;
+                font-size: 24px;
+            }
+
+            div.reverse {
+                color: #fff;
+                background-color: #482a9b;
+            }
+
+            div.norm {
+                color: #482a9b;
+                border: 2px solid #482a9b;
+                letter-spacing: 2px;
+            }
+
+            &:active {
+                transform: scale(0.8);
+            }
+        }
+
+        .categories {
+            display: flex;
+            padding: 4px 0;
+
+            .category {
+                font-size: 16px;
+                margin: 0 24px;
+                transition-duration: 0.1s;
+
+                &:hover {
+                    color: #000;
+                }
+
+                &:active {
+                    transform: scale(0.8);
+                }
+            }
+        }
+
+        .actions {
+            display: flex;
+
+            .action {
+                transition-duration: 0.1s;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 24px;
+                }
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                &:active {
+                    transform: scale(0.8);
+                }
+            }
+        }
+    }
+}
+
+.content {
+    display: flex;
+    position: relative;
+    top: 80px;
 }

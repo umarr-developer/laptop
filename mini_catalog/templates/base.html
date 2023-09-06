@@ -11,8 +11,56 @@
 
 <body>
     <div class="page">
-        {% block content %}
-        {% endblock %}
+        <div class="navbar">
+            <div class="inside">
+                <div class="navbar_body">
+                    <a href="#">
+                        <div class="logo">
+                            <div class="logo_part reverse">Mini</div>
+                            <div class="logo_part norm">Catalog</div>
+                        </div>
+                    </a>
+                    <div class="categories">
+                        <a href="#">
+                            <div class="category">
+                                Honor
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="category">
+                                Huawei
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="category">
+                                Apple
+                            </div>
+                        </a>
+                    </div>
+                    <div class="actions">
+                        <div class="action">
+                            <a href="#">
+                                <img src="{% static 'svg/search.svg' %}" alt="">
+                            </a>
+                        </div>
+                        <div class="action">
+                            <a href="#">
+                                <img src="{% static 'svg/basket.svg' %}" alt="">
+                            </a>
+                        </div>
+                        <div class="action">
+                            <a href="#">
+                                <img src="{% static 'svg/person-circle.svg' %}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
     </div>
 </body>
 

@@ -121,18 +121,18 @@ body {
   transition-duration: 0.1s;
 }
 .navbar_body .logo .logo_part {
-  padding: 0 8px;
+  padding: 0 4px;
   font-family: "Phudu", cursive;
   font-size: 24px;
 }
 .navbar_body .logo div.reverse {
   color: #fff;
-  background-color: #482a9b;
+  background-color: #141414;
+  border-radius: 4px;
 }
 .navbar_body .logo div.norm {
-  color: #482a9b;
-  border: 2px solid #482a9b;
-  letter-spacing: 2px;
+  font-weight: 600;
+  color: #141414;
 }
 .navbar_body .logo:active {
   transform: scale(0.8);

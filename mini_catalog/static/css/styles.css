@@ -90,13 +90,10 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
-a {
-  color: #555555;
-}
-
 .page {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   max-width: 100%;
   min-height: 100%;
 }
@@ -109,7 +106,6 @@ a {
 .navbar {
   position: fixed;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.737254902);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
   border-bottom: 1px solid #bebebe;
@@ -146,6 +142,7 @@ a {
   padding: 4px 0;
 }
 .navbar_body .categories .category {
+  color: #555555;
   font-size: 16px;
   margin: 0 24px;
   transition-duration: 0.1s;
@@ -172,6 +169,93 @@ a {
 }
 .navbar_body .actions .action:active {
   transform: scale(0.8);
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: #141414;
+}
+.footer_body {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 0;
+}
+.footer_body .mailing {
+  display: flex;
+  flex-direction: column;
+}
+.footer_body .mailing_text {
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.footer_body .mailing_description {
+  margin-bottom: 36px;
+  font-size: 14px;
+  color: #666;
+}
+.footer_body .mailing_input input {
+  width: 200px;
+  margin-right: 12px;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 16px;
+  color: #fff;
+}
+.footer_body .mailing_input button {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  filter: brightness(0.6);
+  border-radius: 16px;
+  font-weight: 600;
+  color: #000000;
+  transition-duration: 0.1s;
+}
+.footer_body .mailing_input button:hover {
+  filter: brightness(1);
+}
+.footer_body .column {
+  display: flex;
+  flex-direction: column;
+}
+.footer_body .column_title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #fff;
+}
+.footer_body .column_text {
+  margin-bottom: 8px;
+  font-style: 14px;
+  color: #fff;
+  filter: brightness(0.6);
+}
+.footer_body .column_text:hover {
+  filter: brightness(1);
+}
+.footer_body .social_title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #fff;
+}
+.footer_body .social_site {
+  display: flex;
+  margin-bottom: 8px;
+  filter: brightness(0.6);
+}
+.footer_body .social_site_icon {
+  height: 18px;
+  width: 18px;
+  margin-right: 8px;
+}
+.footer_body .social_site_text {
+  color: #fff;
+  font-size: 16px;
+}
+.footer_body .social_site:hover {
+  filter: brightness(1);
 }
 
 .content {

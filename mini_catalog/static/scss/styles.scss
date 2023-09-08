@@ -5,13 +5,11 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-a {
-    color: #555555;
-}
 
 .page {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     max-width: 100%;
     min-height: 100%;
 }
@@ -24,7 +22,6 @@ a {
 .navbar {
     position: fixed;
     width: 100%;
-    background-color: #ffffffbc;
     backdrop-filter: blur(8px);
     border-bottom: 1px solid #bebebe;
     color: #555555;
@@ -65,6 +62,7 @@ a {
             padding: 4px 0;
 
             .category {
+                color: #555555;
                 font-size: 16px;
                 margin: 0 24px;
                 transition-duration: 0.1s;
@@ -100,6 +98,116 @@ a {
                 }
             }
         }
+    }
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: #141414;
+
+    &_body {
+        display: flex;
+        justify-content: space-between;
+        padding: 36px 0;
+
+        .mailing {
+            display: flex;
+            flex-direction: column;
+
+            &_text {
+                margin-bottom: 18px;
+                font-weight: 600;
+                font-size: 18px;
+                color: #fff;
+            }
+
+            &_description {
+                margin-bottom: 36px;
+                font-size: 14px;
+                color: #666;
+            }
+
+            &_input {
+                input {
+                    width: 200px;
+                    margin-right: 12px;
+                    padding: 8px 16px;
+                    background-color: #00000000;
+                    border: 1px solid #fff;
+                    border-radius: 16px;
+                    color: #fff;
+                }
+
+                button {
+                    padding: 8px 16px;
+                    background-color: #ffffff;
+                    filter: brightness(0.6);
+                    border-radius: 16px;
+                    font-weight: 600;
+                    color: #000000;
+                    transition-duration: (0.1s);
+
+                    &:hover {
+                        filter: brightness(1);
+                    }
+                }
+            }
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+
+            &_title {
+                margin-bottom: 18px;
+                font-size: 18px;
+                color: #fff;
+            }
+
+            &_text {
+                margin-bottom: 8px;
+                font-style: 14px;
+                color: #fff;
+                filter: brightness(0.6);
+
+                &:hover {
+                    filter: brightness(1);
+                }
+            }
+        }
+
+        .social {
+            &_title {
+                margin-bottom: 18px;
+                font-size: 18px;
+                color: #fff;
+            }
+
+            &_site {
+                display: flex;
+                margin-bottom: 8px;
+                filter: brightness(0.6);
+
+                &_icon {
+                    height: 18px;
+                    width: 18px;
+                    margin-right: 8px;
+
+                }
+
+                &_text {
+                    color: #fff;
+                    font-size: 16px;
+                }
+
+                &:hover {
+                    filter: brightness(1);
+                }
+            }
+        }
+
+
     }
 }
 

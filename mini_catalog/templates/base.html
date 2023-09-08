@@ -58,9 +58,130 @@
             </div>
         </div>
         <div class="content">
-            {% block content %}
-            {% endblock %}
+            <div class="inside">
+                {% block content %}
+                {% endblock %}
+            </div>
         </div>
+        <div class="footer">
+            <div class="inside">
+                <div class="footer_body">
+                    <div class="mailing">
+                        <div class="mailing_text">
+                            Подпишитесь на рассылку
+                        </div>
+                        <div class="mailing_description">
+                            Будьте в курсе всех новостей и акций
+                        </div>
+                        <div class="mailing_input">
+                            <input type="text" placeholder="Введите ваш e-mail">
+                            <button>Подписаться</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column_title">
+                            О сайте
+                        </div>
+                        <a href="#">
+                            <div class="column_text">
+                                Бренды
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="column_text">
+                                Магазины
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="column_text">
+                                Новости
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="column_text">
+                                Форум
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="column_text">
+                                Для разработчиков
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <div class="column_title">
+                            Для покупателей
+                        </div>
+                        <a href="#">
+                            <div class="column_text">
+                                Реквизиты
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="column_text">
+                                Оплата и доставка
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="column_text">
+                                Вопросы и ответы
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="column_text">
+                                Условия возврата
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social">
+                        <div class="social_title">
+                            Социальные сети
+                        </div>
+                        <a href="#">
+                            <div class="social_site">
+                                <div class="social_site_icon">
+                                    <img src="{% static 'svg/instagram.svg' %}" alt="">
+                                </div>
+                                <div class="social_site_text">
+                                    Instagram
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social_site">
+                                <div class="social_site_icon">
+                                    <img src="{% static 'svg/vk.svg' %}" alt="">
+                                </div>
+                                <div class="social_site_text">
+                                    VK
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social_site">
+                                <div class="social_site_icon">
+                                    <img src="{% static 'svg/youtube.svg' %}" alt="">
+                                </div>
+                                <div class="social_site_text">
+                                    YouTube
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social_site">
+                                <div class="social_site_icon">
+                                    <img src="{% static 'svg/telegram.svg' %}" alt="">
+                                </div>
+                                <div class="social_site_text">
+                                    Telegram
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 

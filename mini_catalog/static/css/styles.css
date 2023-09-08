@@ -194,7 +194,8 @@ body {
 .footer_body .mailing_description {
   margin-bottom: 36px;
   font-size: 14px;
-  color: #666;
+  color: #fff;
+  filter: brightness(0.6);
 }
 .footer_body .mailing_input input {
   width: 200px;
@@ -246,13 +247,13 @@ body {
   filter: brightness(0.6);
 }
 .footer_body .social_site_icon {
-  height: 18px;
-  width: 18px;
+  height: 14px;
+  width: 14px;
   margin-right: 8px;
 }
 .footer_body .social_site_text {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
 }
 .footer_body .social_site:hover {
   filter: brightness(1);

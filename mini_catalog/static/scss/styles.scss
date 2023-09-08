@@ -125,7 +125,8 @@ body {
             &_description {
                 margin-bottom: 36px;
                 font-size: 14px;
-                color: #666;
+                color: #fff;
+                filter: brightness(0.6);
             }
 
             &_input {
@@ -190,15 +191,15 @@ body {
                 filter: brightness(0.6);
 
                 &_icon {
-                    height: 18px;
-                    width: 18px;
+                    height: 14px;
+                    width: 14px;
                     margin-right: 8px;
 
                 }
 
                 &_text {
                     color: #fff;
-                    font-size: 16px;
+                    font-size: 14px;
                 }
 
                 &:hover {

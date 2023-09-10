@@ -21,21 +21,13 @@
                         </div>
                     </a>
                     <div class="categories">
-                        <a href="#">
-                            <div class="category">
-                                Honor
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="category">
-                                Huawei
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="category">
-                                Apple
-                            </div>
-                        </a>
+                        {% for category in categories %}
+                            <a href="{% url 'category' category.slug %}">
+                                <div class="category">
+                                    {{ category.name }}
+                                </div>
+                            </a>
+                        {% endfor %}
                     </div>
                     <div class="actions">
                         <div class="action">

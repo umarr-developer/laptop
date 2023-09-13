@@ -106,10 +106,12 @@ body {
 .navbar {
   position: fixed;
   width: 100%;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  background-color: rgba(255, 255, 255, 0.6274509804);
   border-bottom: 1px solid #bebebe;
   color: #555555;
+  z-index: 10;
 }
 .navbar_body {
   display: flex;
@@ -175,6 +177,7 @@ body {
   display: flex;
   width: 100%;
   background-color: #141414;
+  z-index: 10;
 }
 .footer_body {
   display: flex;

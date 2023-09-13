@@ -1,0 +1,83 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(24px);
+    background-color: #ffffffa0;
+    border-bottom: 1px solid #bebebe;
+    color: #555555;
+    z-index: 10;
+
+    &_body {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 0;
+
+        .logo {
+            display: flex;
+            transition-duration: 0.1s;
+
+            .logo_part {
+                padding: 0 4px;
+                font-family: 'Phudu', cursive;
+                font-size: 24px;
+            }
+
+            div.reverse {
+                color: #fff;
+                background-color: #141414;
+                border-radius: 4px;
+            }
+
+            div.norm {
+                font-weight: 600;
+                color: #141414;
+            }
+
+            &:active {
+                transform: scale(0.8);
+            }
+        }
+
+        .categories {
+            display: flex;
+            padding: 4px 0;
+
+            .category {
+                color: #555555;
+                font-size: 16px;
+                margin: 0 24px;
+                transition-duration: 0.1s;
+
+                &:hover {
+                    color: #000;
+                }
+
+                &:active {
+                    transform: scale(0.8);
+                }
+            }
+        }
+
+        .actions {
+            display: flex;
+
+            .action {
+                transition-duration: 0.1s;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 24px;
+                }
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                &:active {
+                    transform: scale(0.8);
+                }
+            }
+        }
+    }
+}

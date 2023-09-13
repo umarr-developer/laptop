@@ -1,0 +1,88 @@
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: #141414;
+  z-index: 10;
+}
+.footer_body {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 0;
+}
+.footer_body .mailing {
+  display: flex;
+  flex-direction: column;
+}
+.footer_body .mailing_text {
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.footer_body .mailing_description {
+  margin-bottom: 36px;
+  font-size: 14px;
+  color: #fff;
+  filter: brightness(0.6);
+}
+.footer_body .mailing_input input {
+  width: 200px;
+  margin-right: 12px;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 16px;
+  color: #fff;
+}
+.footer_body .mailing_input button {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  filter: brightness(0.6);
+  border-radius: 16px;
+  font-weight: 600;
+  color: #000000;
+  transition-duration: 0.1s;
+}
+.footer_body .mailing_input button:hover {
+  filter: brightness(1);
+}
+.footer_body .column {
+  display: flex;
+  flex-direction: column;
+}
+.footer_body .column_title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #fff;
+}
+.footer_body .column_text {
+  margin-bottom: 8px;
+  font-style: 14px;
+  color: #fff;
+  filter: brightness(0.6);
+}
+.footer_body .column_text:hover {
+  filter: brightness(1);
+}
+.footer_body .social_title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #fff;
+}
+.footer_body .social_site {
+  display: flex;
+  margin-bottom: 8px;
+  filter: brightness(0.6);
+}
+.footer_body .social_site_icon {
+  height: 14px;
+  width: 14px;
+  margin-right: 8px;
+}
+.footer_body .social_site_text {
+  color: #fff;
+  font-size: 14px;
+}
+.footer_body .social_site:hover {
+  filter: brightness(1);
+}

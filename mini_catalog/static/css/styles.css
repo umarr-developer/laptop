@@ -86,23 +86,6 @@ h6 {
   font-weight: 400;
 }
 
-body {
-  font-family: "Manrope", sans-serif;
-}
-
-.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 100%;
-  min-height: 100%;
-}
-
-.inside {
-  width: 80%;
-  margin: auto;
-}
-
 .navbar {
   position: fixed;
   width: 100%;
@@ -266,4 +249,22 @@ body {
   display: flex;
   position: relative;
   top: 80px;
+  margin-bottom: 80px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.inside {
+  width: 80%;
+  margin: auto;
 }

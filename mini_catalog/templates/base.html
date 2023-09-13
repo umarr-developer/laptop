@@ -1,4 +1,5 @@
 {% load static %}
+{% load categories %}
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -21,6 +22,7 @@
                         </div>
                     </a>
                     <div class="categories">
+                        {% get_categories as categories %}
                         {% for category in categories %}
                             <a href="{% url 'category' category.slug %}">
                                 <div class="category">

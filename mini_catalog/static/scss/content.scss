@@ -3,4 +3,95 @@
     position: relative;
     top: 80px;
     margin-bottom: 80px;
+
+    .section {
+        display: flex;
+        margin-bottom: 24px;
+
+        .top_box {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            filter: brightness(0.95) saturate(50%);
+            background-color: #fff;
+            transition-duration: 0.3s;
+
+            &:hover {
+                filter: brightness(0.95) saturate(100%);
+            }
+
+            .image {
+                width: 50%;
+                padding: 48px 0;
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 420px;
+                    width: auto;
+                    margin: auto;
+                    transition-duration: 0.2s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+            }
+
+            .description {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 50%;
+                height: 100%;
+                padding: 48px 96px;
+                background-color: #141414;
+                color: #fff;
+
+                .name {
+                    margin-bottom: 8px;
+                    font-size: 32px;
+                }
+
+                .category {
+                    margin-bottom: 24px;
+                    font-size: 22px;
+                }
+
+                .stats {
+                    font-size: 16px;
+                    filter: brightness(0.8);
+
+                    .stat {
+                        margin-bottom: 12px;
+                    }
+                }
+
+                .price {
+                    margin-top: 24px;
+                    font-size: 48px;
+                    color: #71e564;
+                }
+
+                .info {
+                    margin-top: 36px;
+
+                    button {
+                        background-color: #ffffff;
+                        border-radius: 12px;
+                        padding: 8px 24px;
+                        font-size: 18px;
+                        color: #141414;
+                        transition-duration: 0.2s;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 }

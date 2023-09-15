@@ -1,4 +1,32 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-    
+<div class="section">
+    <div class="top_box">
+        <div class="image">
+            <img src="{% static top_product.image %}" alt="error">
+        </div>
+        <div class="description">
+            <div class="name">
+                {{ top_product.name }}
+            </div>
+            <div class="category">
+                {{ top_product.category.name }}
+            </div>
+            <div class="stats">
+                {% for key, value in top_product.stats.items %}
+                <div class="stat">
+                    {{key}}: {{value}}
+                </div>
+                {% endfor %}
+            </div>
+            <div class="price">
+                {{ top_product.price }}$
+            </div>
+            <div class="info">
+                <button>Подробнее</button>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

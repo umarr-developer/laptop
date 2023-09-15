@@ -4,3 +4,77 @@
   top: 80px;
   margin-bottom: 80px;
 }
+.content .section {
+  display: flex;
+  margin-bottom: 24px;
+}
+.content .section .top_box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  filter: brightness(0.95) saturate(50%);
+  background-color: #fff;
+  transition-duration: 0.3s;
+}
+.content .section .top_box:hover {
+  filter: brightness(0.95) saturate(100%);
+}
+.content .section .top_box .image {
+  width: 50%;
+  padding: 48px 0;
+  display: flex;
+  align-items: center;
+}
+.content .section .top_box .image img {
+  height: 420px;
+  width: auto;
+  margin: auto;
+  transition-duration: 0.2s;
+}
+.content .section .top_box .image img:hover {
+  transform: scale(1.1);
+}
+.content .section .top_box .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  padding: 48px 96px;
+  background-color: #141414;
+  color: #fff;
+}
+.content .section .top_box .description .name {
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+.content .section .top_box .description .category {
+  margin-bottom: 24px;
+  font-size: 22px;
+}
+.content .section .top_box .description .stats {
+  font-size: 16px;
+  filter: brightness(0.8);
+}
+.content .section .top_box .description .stats .stat {
+  margin-bottom: 12px;
+}
+.content .section .top_box .description .price {
+  margin-top: 24px;
+  font-size: 48px;
+  color: #71e564;
+}
+.content .section .top_box .description .info {
+  margin-top: 36px;
+}
+.content .section .top_box .description .info button {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 8px 24px;
+  font-size: 18px;
+  color: #141414;
+  transition-duration: 0.2s;
+}
+.content .section .top_box .description .info button:hover {
+  transform: scale(1.2);
+}

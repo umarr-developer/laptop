@@ -17,7 +17,7 @@
         <div class="navbar">
             <div class="inside">
                 <div class="navbar_body">
-                    <a href="#">
+                    <a href="{% url 'main_page' %}">
                         <div class="logo">
                             <div class="logo_part reverse">Mini</div>
                             <div class="logo_part norm">Catalog</div>
@@ -26,11 +26,11 @@
                     <div class="categories">
                         {% get_categories as categories %}
                         {% for category in categories %}
-                            <a href="{% url 'category' category.slug %}">
-                                <div class="category">
-                                    {{ category.name }}
-                                </div>
-                            </a>
+                        <a href="{% url 'category' category.slug %}">
+                            <div class="category">
+                                {{ category.name }}
+                            </div>
+                        </a>
                         {% endfor %}
                     </div>
                     <div class="actions">

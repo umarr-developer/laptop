@@ -20,6 +20,7 @@ class Product(models.Model):
     stats = models.JSONField()
     price = models.IntegerField()
     views = models.IntegerField(default=0)
+    create_on = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return self.name

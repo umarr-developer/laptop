@@ -9,6 +9,7 @@ class MainPageView(TitleMixin, generic.TemplateView):
     def get_context_data(self, **kwargs: any) -> dict[str, any]:
         context = super().get_context_data(**kwargs)
         context['top_product'] = Product.objects.all()[0]
+        context['new_products'] = Product.objects.all().order_by('create_on')
         return context
 
 class CategoryView(generic.TemplateView):

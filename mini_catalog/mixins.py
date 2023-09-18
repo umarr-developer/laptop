@@ -1,5 +1,5 @@
 class TitleMixin:
-    title: str
+    title: str = 'Mini Catalog'
 
     def get_context_data(self, **kwargs: any) -> dict[str, any]:
         context = super().get_context_data(**kwargs)

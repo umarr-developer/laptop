@@ -23,9 +23,11 @@
             <div class="price">
                 {{ top_product.price }}$
             </div>
-            <div class="info">
-                <button>Подробнее</button>
-            </div>
+            <a href="{% url 'product_page' top_product.slug %}">
+                <div class="info">
+                    <button>Подробнее</button>
+                </div>
+            </a>
         </div>
     </div>
 </div>

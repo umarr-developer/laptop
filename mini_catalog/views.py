@@ -6,11 +6,12 @@ from mini_catalog.models import Product
 class MainPageView(TitleMixin, generic.TemplateView):
     template_name = 'main.html'
     title = 'Главная страница'
+    all_products = Product.objects.all()
 
     def get_context_data(self, **kwargs: any) -> dict[str, any]:
         context = super().get_context_data(**kwargs)
-        context['top_product'] = Product.objects.all().order_by('-views')[0]
-        context['new_products'] = Product.objects.all().order_by('create_on')
+        context['top_product'] = self.all_products.order_by('-views')[0]
+        context['new_products'] = self.all_products.order_by('create_on')
         return context
 
 

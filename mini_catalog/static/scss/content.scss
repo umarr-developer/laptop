@@ -79,13 +79,14 @@
 
             .image {
                 width: 50%;
-                padding: 48px 0;
+                padding: 96px;
                 display: flex;
                 align-items: center;
 
                 img {
-                    height: 420px;
-                    width: auto;
+                    max-width: 320px;
+                    height: auto;
+                    object-fit: cover;
                     margin: auto;
                     transition-duration: 0.2s;
 
@@ -101,7 +102,6 @@
                 flex-direction: column;
                 justify-content: space-between;
                 width: 50%;
-                height: 100%;
                 padding: 48px 96px;
                 background-color: #141414;
                 color: #fff;

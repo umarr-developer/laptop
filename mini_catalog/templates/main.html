@@ -29,4 +29,28 @@
         </div>
     </div>
 </div>
+<div class="section">
+    <div class="section_name">
+        Новые
+    </div>
+    <div class="section_body">
+        {% for product in new_products %}
+        <a class="box" href="#">
+                <div class="image">
+                    <img src="{% static product.image %}" alt="error">
+                </div>
+                <div class="name">
+                    {{ product.name }}
+                </div>
+                <div class="category">
+                    {{ product.category }}
+                </div>
+                <div class="price">
+                    {{ product.price }}$
+                </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
 {% endblock %}

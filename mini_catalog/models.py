@@ -2,7 +2,7 @@ import os
 from django.db import models
 
 
-class Categories(models.Model):
+class Category(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=64)
     slug = models.SlugField(unique=True)
@@ -15,7 +15,7 @@ class Product(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=128)
     slug = models.SlugField(unique=True)
-    category = models.ForeignKey(Categories, on_delete=models.DO_NOTHING)
+    category = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
     image = models.FileField(upload_to='images/')
     stats = models.JSONField()
     price = models.IntegerField()

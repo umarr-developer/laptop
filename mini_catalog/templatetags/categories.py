@@ -1,8 +1,9 @@
 from django import template
-from mini_catalog.models import Categories
+from mini_catalog.models import Category
 
 register = template.Library()
 
+
 @register.simple_tag()
 def get_categories():
-    return Categories.objects.all()
+    return Category.objects.all()

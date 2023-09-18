@@ -1,5 +1,4 @@
 from django.views import generic
-from mini_catalog.mixins import TitleMixin
 from mini_catalog.models import Product
 
 
@@ -15,7 +14,7 @@ class MainPageView(generic.TemplateView):
         return context
 
 
-class ProductPageView(TitleMixin, generic.TemplateView):
+class ProductPageView(generic.TemplateView):
     template_name = 'product.html'
 
     def get_context_data(self, **kwargs: any) -> dict[str, any]:

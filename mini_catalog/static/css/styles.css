@@ -281,13 +281,13 @@ h6 {
 }
 .content .section .box .image {
   height: 60%;
-  padding: 8px;
+  padding: 4px;
 }
 .content .section .box .image img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .content .section .box .name {
   font-size: 18px;

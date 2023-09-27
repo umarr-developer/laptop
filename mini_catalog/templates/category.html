@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="section">
+    <div class="section_body">
+        {% for product in products %}
+        <a class="box" href="{% url 'product_page' product.slug %}">
+                <div class="image">
+                    <img src="{% static product.image %}" alt="error">
+                </div>
+                <div class="name">
+                    {{ product.name }}
+                </div>
+                <div class="category">
+                    {{ product.category }}
+                </div>
+                <div class="price">
+                    {{ product.price }}$
+                </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

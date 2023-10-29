@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="form_block">
+    <div class="text">
+        Авторизация
+    </div>
+    <form action="">
+        <div class="input_block">
+            <label for="email">
+                <img src="{% static 'svg/envelope.svg' %}" alt="">
+                Электронны адрес
+            </label>
+            <input type="email" name="" id="email">
+        </div>
+        <div class="input_block">
+            <label for="password">
+                <img src="{% static 'svg/key-fill.svg' %}" alt="">
+                Пароль
+            </label>
+            <input type="password" name="" id="password">
+        </div>
+        <div class="button_block">
+            <button>Войти</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

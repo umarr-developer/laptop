@@ -434,6 +434,14 @@ h6 {
 .form_block .button_block button:active {
   transform: scale(0.9);
 }
+.form_block .action_block {
+  margin: 12px 0;
+  text-align: center;
+}
+.form_block .action_block a {
+  color: #353ea2;
+  font-weight: 600;
+}
 
 body {
   font-family: "Manrope", sans-serif;

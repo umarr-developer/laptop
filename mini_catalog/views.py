@@ -34,3 +34,10 @@ class ProductPageView(generic.TemplateView):
         context['title'] = product.name
         context['product'] = product
         return context
+
+# TODO
+class RegisterPageView(generic.TemplateView):
+    template_name = 'register.html'
+
+class AuthPageView(generic.TemplateView):
+    template_name = 'auth.html'
